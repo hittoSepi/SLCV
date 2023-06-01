@@ -25,6 +25,8 @@
 </template>
 
 <script>
+import 'dotenv/config';
+
 
 export default {
     name: "GitHub",
@@ -32,7 +34,7 @@ export default {
     data() {
         return {
             repo: {
-                readOnlyToken: "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",
+                readOnlyToken: process.env.GITHUB_TOKEN,
                 name: "SLCV",
                 apiUrl: "https://api.github.com/repos/hittoSepi/SLCV/git/trees/main?recursive=1",
                 files: [],
@@ -42,9 +44,16 @@ export default {
             headers: null,
         };
     },
+    created() {
+      
+      
+      
+    },
     mounted() {
+       
+      
         var _self = this;
-
+        console.log(process.env);
         this.headers = new Headers();
         this.headers.append("Authorization", "Bearer " + this.repo.readOnlyToken);
         this.headers.append("X-GitHub-Api-Version", "2022-11-28")

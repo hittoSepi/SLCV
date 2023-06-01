@@ -1,4 +1,8 @@
 'use strict'
-module.exports = {
-  NODE_ENV: '"production"'
+
+var env =  {
+  NODE_ENV: '"production"',
+
 }
+
+module.exports = env
