@@ -6,27 +6,15 @@
 
 				<div class="col-sm-12 col-md-4">
 					<profile></profile>
+					<work-experience></work-experience>
+					<skills></skills>
 				</div>
 
 				<div class="col-sm-12 col-md-8">
 					<strengths></strengths>
-				</div>
-
-				<div class="col-sm-12 col-md-4">
-					<work-experience></work-experience>
-				</div>
-
-
-				<div class="col-sm-12 col-md-8">
 					<hobbies></hobbies>
 					<GitHub></GitHub>
 				</div>
-
-				<div class="col-sm-12 col-md-4">
-					<skills></skills>
-				</div>
-
-
 			</div>
 		</div>
 	</div>
