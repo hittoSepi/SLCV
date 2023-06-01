@@ -44,16 +44,8 @@ export default {
             headers: null,
         };
     },
-    created() {
-      
-      
-      
-    },
     mounted() {
-       
-      
         var _self = this;
-        console.log(process.env);
         this.headers = new Headers();
         this.headers.append("Authorization", "Bearer " + this.repo.readOnlyToken);
         this.headers.append("X-GitHub-Api-Version", "2022-11-28")
@@ -86,10 +78,7 @@ export default {
                 .then(response => response.json())
                 .then(data => {
                     _self.selectedFileContents = atob(data.content);
-                });
-
-
-
+            });
         },
       
         linkClick(event) {
