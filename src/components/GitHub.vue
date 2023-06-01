@@ -30,9 +30,9 @@ export default {
     data() {
         return {
             repo: {
-                readOnlyToken: "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",
+                readOnlyToken: "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",
                 name: "SeppoLaineCV",
-                apiUrl: "https://api.github.com/repos/hittoSepi/SeppoLaineCV/git/trees/main?recursive=1",
+                apiUrl: "https://api.github.com/repos/hittoSepi/SLCV/git/trees/main?recursive=1",
                 files: [],
             },
             selectedFile: null,
